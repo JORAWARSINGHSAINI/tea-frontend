@@ -1,65 +1,42 @@
+import React, { Component } from 'react'
+import Features from '../components/Features'
+import Benefits from '../components/Benefits'
+import Image from 'next/image'
+import NavbarX from '../components/NavbarX'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+export default class home extends Component {
+    render() {
+        return (
+            <div className = " mx-6 mt-3 font-serif">
+                <Head>
+            <title>Home | The Education App</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+                 <header className=" mb-1 bg-gray-100 h-18">
+                    <p className=" pt-4 pl-4 text-4xl ml-4 text-black">Education App</p>
+                </header>
+                <NavbarX></NavbarX>
+                <div className=" sm:grid grid-cols-5 gap-4 ">
+                    
+                        <div className="mb-4 pb-6 col-span-3 flex flex-col items-center justify-center  bg-green-300  text-6xl font-serif font-semibold " >
+                            <div className="py-4">Organise</div>
+                            <div className="py-4">Your</div>
+                            <div className="py-4">Schooling!</div>
+                            <button className="  btn w-44 bg-green-400 border-2 border-green-600 text-white text-xl mt-14 p-2 font-light"><a href="#benefits_section">Learn More</a></button>
+                        </div>
+                        
+                        <div className=" sm:col-span-2 ">
+                            <Image src="/img/home1.jpg"
+                                alt="Team process banner" width={600} height = {500}  />
+                        </div>
+                </div>
+                <div id="features_section">
+                <Features></Features>
+                </div>
+                <div id="benefits_secion">
+                <Benefits></Benefits>
+                </div>
+            </div>
+        )
+    }
 }
