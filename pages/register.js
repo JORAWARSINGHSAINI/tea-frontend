@@ -13,14 +13,17 @@ export default function register() {
 			<Head>
         <title>Register | The Education App</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta
+	  name="description"           
+  	content="Register Page for the Education App Platform"></meta>
       </Head>
             <NavbarX></NavbarX>
                 <div className="  flex   pt-16 items-center  justify-center">
                     <form 
                     >
-                        <div className=" mb-7  flex justify-center">
-                        <Image  src="/img/Institution_logo.png" width={150} height={150} alt="Institution Logo" />
-                        </div>      
+                      <div className=" mb-7 pt-7 text-3xl font-serif font-semibold flex justify-center">
+                    Register
+                    </div>   
                           <input type="text"
 							name="email"
 							placeholder="Email" 

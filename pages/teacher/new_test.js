@@ -1,8 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import NavbarY from '../../components/NavbarY'
 import { useState } from 'react'
-import Link from 'next/link'
 import Sidebar from '../../components/Sidebar'
 import axios from 'axios'
 import Head from 'next/head'
@@ -37,11 +35,11 @@ export default function new_test() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
             <NavbarY></NavbarY>
-            <div className="grid grid-cols-6">
-                <div className="col-span-1">
+            <div className="sm:grid grid-cols-6">
+                <div className="sm:col-span-1">
                     <Sidebar></Sidebar>
                 </div>
-                <div className=" col-span-5 ">
+                <div className=" col-span-6 sm:col-span-5 ">
                     <div className="border-b-2 w-full h-16  flex justify-center items-center text-xl border-green-400">
                      
                         Add New Test

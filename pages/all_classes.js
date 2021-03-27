@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 
-import Sidebar from '../../components/Sidebar'
-import NavbarY from '../../components/NavbarY'
+import Sidebar from '../components/Sidebar'
+import NavbarY from '../components/NavbarY'
 import Head from 'next/head'
-import ClassCard from '../../components/ClassCard'
+import ClassCard from '../components/ClassCard'
 
 export default function all_classes() {
     const [classes, setclasses] = useState([
@@ -19,16 +19,16 @@ export default function all_classes() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
             <NavbarY></NavbarY>
-            <div className="grid grid-cols-6">
-                <div className="col-span-1">
+            <div className="sm:grid grid-cols-6">
+                <div className="sm:col-span-1">
                 <Sidebar></Sidebar>
                 </div>
                 
-                <div className=" col-span-5 ">
+                <div className="col-span-6 sm:col-span-5 ">
                     <div className="border-b-2 w-full h-16  flex justify-center items-center text-xl border-green-400">
-                        All Classes1
+                        All Classes
                     </div>
-                    <div className="sm:grid grid-cols-3 gap-4 pt-20 pl-4 ">
+                    <div className="sm:grid grid-cols-3 gap-4 pt-20 pl-4 pr-4 ">
                     {
                         classes.map( (elementval,index)=>{
                             return (

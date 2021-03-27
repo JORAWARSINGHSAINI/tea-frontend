@@ -35,7 +35,7 @@ export default function new_assignment() {
                 <div className="sm:col-span-1">
                     <Sidebar></Sidebar>
                 </div>             
-                <div className="sm:w-full  sm:col-span-5 ">
+                <div className="col-span-6  sm:col-span-5 ">
                     <div className="border-b-2 w-full h-16  flex justify-center items-center text-xl border-green-400">
                         Add New Assignment 
                     </div>

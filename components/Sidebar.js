@@ -28,7 +28,7 @@ export default function Sidebar() {
             New Assignment
          </a>
          </Link>
-         <Link href="/teacher/all_classes">
+         <Link href="/all_classes">
          <a className="hover:bg-green-400 hover:text-white w-full text-center  p-6 focus:bg-green-600
           border-b-2 border-gray-300">
             All classes

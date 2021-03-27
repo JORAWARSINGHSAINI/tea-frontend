@@ -28,12 +28,12 @@ export default function new_class() {
     return (
         <div className="h-screen">
             <NavbarY></NavbarY>
-            <div className="grid grid-cols-6">
-                <div className="col-span-1">
+            <div className="sm:grid grid-cols-6">
+                <div className="sm:col-span-1">
                 <Sidebar></Sidebar>
                 </div>
                 
-                <div className=" col-span-5 ">
+                <div className="col-span-6  sm:col-span-5 ">
                     <div className="border-b-2 w-full h-16  flex justify-center items-center text-xl border-green-400">
                         Add New Class
                     </div>
